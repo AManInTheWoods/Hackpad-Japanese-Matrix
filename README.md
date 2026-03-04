@@ -41,5 +41,5 @@ CAD Model, Made in Fusion360 (the free version):
 
 <img width="664" height="846" alt="image" src="https://github.com/user-attachments/assets/112c4f57-12a4-4f8b-af41-233ef3e239e6" />
 
-<H4> *I had such a dilemma making such everything is symmetrical (some still probably aren't)* </H4>
+*<H4> I had such a dilemma making such everything is symmetrical (some still probably aren't) </H4>
 
