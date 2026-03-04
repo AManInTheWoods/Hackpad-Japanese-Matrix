@@ -4,6 +4,7 @@ CreatePad (formerly named Hackpad-Japanese-Matrix) is a multipurpose productivit
 <H2>
 Features: 
 </H2>
+
   * 11 total switches (3x3 + 2 knobs)
   
   * A 0.91 inch OLED display
