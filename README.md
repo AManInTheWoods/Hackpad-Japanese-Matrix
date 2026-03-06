@@ -1,5 +1,5 @@
 # CreatePad V1
-CreatePad (formerly named "Hackpad-Japanese-Matrix" and "Macropad Proto V1") is a multipurpose productivity macro pad with a 3x3 switch layout, two rotary encoders, an OLED screen and uses QMK firmware. Under the hood is a Japanese-Duplex-Matrix that made the large amount of inputs (15 in total, including both of the encoders' buttons!) possible. 
+CreatePad (formerly named "Hackpad-Japanese-Matrix" and "Macropad Proto V1") is a multipurpose productivity macro pad with a 3x3 switch layout, two rotary encoders, an OLED screen and uses QMK firmware. Under the hood is a Japanese Duplex Matrix that made the large amount of inputs (15 in total, including both of the encoders' buttons!) possible. More info on that below.
 
 <H2>
 Features: 
@@ -11,7 +11,7 @@ Features:
     
   * 10 customizable profiles with VIA support
   
-  * Slanted case design for better (my personal) comfort :) 
+  * Slanted case design for better (my personal) comfort :)
 
 <H2>
 CAD Model, Made in Fusion360 (the free version):
@@ -35,7 +35,7 @@ CAD Model, Made in Fusion360 (the free version):
 
 <img width="1503" height="876" alt="image" src="https://github.com/user-attachments/assets/a1d29457-f735-443d-acdb-bd7be2624da3" />
 
-<H4>"Behold, The Japanese-Duplex-Matrix"</H4>
+<H4>"Behold, The Japanese Duplex Matrix"</H4>
 
 <H3>PCB:</H3>
 
@@ -45,7 +45,13 @@ CAD Model, Made in Fusion360 (the free version):
 
 <H2>Firmware Overview:</H2>
 
-CreatePad uses QMK firmware and is highly customizable, even the OLED can be configured using it! The attatched firmware (as of now) can store up to 10 unique, fully customizable configurations (even the knobs' functions!) through VIA.
+CreatePad uses custom QMK firmware (because the matrix used is different from a traditional matrix) and is highly customizable, even the OLED can be configured using it! The attatched firmware (as of now) can store up to 10 unique, fully customizable configurations (even the knobs' functions!) through VIA.
+
+<H2>The Japanese-Duplex Matrix</H2>
+
+Since the XIAO RP2040 only has 14 pins and only 5 of them are left for button inputs, I had to pick between two choices: 1. Reduce the amount of total physical inputs or 2. Find out if there's another type of matrix that limits the amount of pins even further than that of a traditional matrix. Turns out there is such a thing! It's called a Japanese Duplex Matrix. Everything about it can be read on this link: https://kbd.news/The-Japanese-duplex-matrix-1391.html#jpduplex .
+
+In a nutshell, according to the webpage, unlike a traditional keyboard matrix, the custom QMK firmware scans the matrix in both directions! First COL2ROW, then ROW2COL, in succession. "This way the matrix can be scanned in both ways, checking half of the switches on the COL2ROW and another half on the ROW2COL iteration." Compared to a traditional matrix, the amount of pins needed have been significant reduced, making it exactly needing only 5 pins! No extra rows or columns needed.
 
 <H2>BOM:</H2>
 
