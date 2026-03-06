@@ -61,6 +61,8 @@ In a nutshell, according to the webpage, unlike a traditional keyboard matrix, t
 
 * 2x EC11 Rotary Encoders
 
+* 2x Rotary Encoder Knobs
+
 * 11x Through-hole 1N4148 Diodes
 
 * 1x 0.91 Inch OLED Display
